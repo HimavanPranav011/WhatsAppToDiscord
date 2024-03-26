@@ -122,7 +122,7 @@ const setup = {
         });
       });
     };
-    settings.Token = process.env.WA2DC_TOKEN || await input('Please enter your bot token: ');
+    settings.Token = process.env.WA2DC_TOKEN;
     Object.assign(settings, await this.setupDiscordChannels(settings.Token));
     return settings;
   },
